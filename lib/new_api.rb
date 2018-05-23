@@ -4,6 +4,6 @@ ValidatorClient.configure do |config|
   config.host = 'localhost:8080'
 end
 
-def getApi()
+def new_api
   ValidatorClient::ValidationApi.new
 end

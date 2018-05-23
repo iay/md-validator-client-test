@@ -2,16 +2,16 @@ task :cop do
   system 'bundle exec rubocop'
 end
 
-def runTest(s)
-  puts "Running test #{s}."
-  system "bundle exec ruby -I lib test/test_#{s}.rb"
+def run_test(test_name)
+  puts "Running test #{test_name}."
+  system "bundle exec ruby -I lib test/test_#{test_name}.rb"
   puts 'Done.'
 end
 
 task :test_get_validators do
-  runTest 'get_validators'
+  run_test 'get_validators'
 end
 
-task :default => %[test_get_validators] do
+task default: %(test_get_validators) do
   puts 'All tests done.'
 end

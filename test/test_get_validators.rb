@@ -1,8 +1,8 @@
-require 'get_api'
+require 'new_api'
 
 begin
   # lists available validators
-  result = getApi().get_validators
+  result = new_api.get_validators
   puts "Validators detected: #{result.length}"
   result.each do |val|
     puts "   #{val.validator_id}: #{val.description}"
