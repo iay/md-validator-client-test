@@ -12,6 +12,23 @@ task :test_get_validators do
   run_test 'get_validators'
 end
 
-task default: %(test_get_validators) do
+task :test_bad_validator do
+  run_test 'bad_validator'
+end
+
+task :test_bad_xml do
+  run_test 'bad_xml'
+end
+
+task :test_validate do
+  run_test 'validate'
+end
+
+task :test_validate_empty do
+  run_test 'validate_empty'
+end
+
+task default: %i[test_get_validators test_bad_validator
+                 test_bad_xml test_validate test_validate_empty] do
   puts 'All tests done.'
 end
