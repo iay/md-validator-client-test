@@ -1,7 +1,7 @@
 PATH
   remote: ../inc-validator-client-ruby
   specs:
-    inc-validator-client (1.0.0)
+    inc-validator-client (1.0.1)
       json (~> 2.1, >= 2.1.0)
       typhoeus (~> 1.0, >= 1.0.1)
 
