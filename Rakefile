@@ -28,7 +28,12 @@ task :test_validate_empty do
   run_test 'validate_empty'
 end
 
+task :test_validate_sanity do
+  run_test 'validate_sanity'
+end
+
 task default: %i[test_get_validators test_bad_validator
-                 test_bad_xml test_validate test_validate_empty] do
+                 test_bad_xml test_validate test_validate_empty
+                 test_validate_sanity] do
   puts 'All tests done.'
 end
