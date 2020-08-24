@@ -6,7 +6,7 @@ group :devel do # required for development
   gem 'rubocop'
 end
 
-gem 'inc-validator-client', path: '../inc-validator-client-ruby'
+gem 'inc-validator-client', path: '../md-validator-client-ruby'
 
 #
 # Pin the 'ffi' gem at version 1.9.21 to prevent segfaults on
