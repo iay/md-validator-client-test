@@ -6,4 +6,4 @@ group :devel do # required for development
   gem 'rubocop'
 end
 
-gem 'inc-validator-client', path: '../md-validator-client-ruby'
+gem 'md-validator-client', path: '../md-validator-client-ruby'

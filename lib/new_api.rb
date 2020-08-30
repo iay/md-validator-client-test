@@ -1,4 +1,4 @@
-require 'inc-validator-client'
+require 'md-validator-client'
 
 ValidatorClient.configure do |config|
   config.host = 'localhost:8080'

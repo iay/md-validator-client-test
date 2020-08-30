@@ -1,7 +1,7 @@
-# `inc-validator-client-test`
+# Metadata Validator Web Service Client Test
 
-Simple Ruby-based tests to exercise the `inc-validator-client-ruby` client
-library to access the `inc-validator` micro-service.
+Simple Ruby-based tests to exercise the `md-validator-client-ruby` client
+library to access the `md-validator` micro-service.
 
 ## Setting Up
 
